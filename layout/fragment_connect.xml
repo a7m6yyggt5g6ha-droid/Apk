@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:textSize="24.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:textAlignment="center" />
+		<TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/version_name" android:textAlignment="center" />
+		<Button android:id="@id/privacyPolicy" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginBottom="10.0dip" android:text="Privacy Policy" />
+		<TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ip_list_to_scan" />
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<EditText android:textSize="18.0sp" android:id="@id/ipListEditText" android:layout_width="fill_parent" android:layout_height="120.0dip" android:fontFamily="serif-monospace" />
+			<LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<Button android:id="@id/resetIpList" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:text="Reset" />
+				<Button android:id="@id/saveIpList" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="Save" />
+			</LinearLayout>
+		</LinearLayout>
+		<TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/host_info" />
+		<TextView android:textSize="20.0sp" android:id="@id/infoTextView" android:layout_width="fill_parent" android:layout_height="400.0dip" android:fontFamily="serif-monospace" />
+	</LinearLayout>
+</FrameLayout>

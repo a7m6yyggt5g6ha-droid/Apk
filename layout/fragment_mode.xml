@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingTop="20.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="1.0">
+			<Button android:id="@id/standardMode" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="STANDARD" android:layout_weight="1.0" />
+			<Button android:id="@id/offroadMode" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="OFF-ROAD" android:layout_weight="1.0" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="1.0">
+			<Button android:id="@id/raceMode" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="RACE" android:layout_weight="1.0" />
+			<Button android:id="@id/customMode" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="CUSTOM" android:layout_weight="1.0" />
+		</LinearLayout>
+		<View android:background="#ff848484" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="1.0">
+			<Button android:id="@id/block" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="Block" android:layout_weight="1.0" />
+			<Button android:id="@id/calibpos" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Calib Pos" android:layout_weight="1.0" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="1.0">
+			<Button android:enabled="false" android:id="@id/reboot" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="Reboot" android:layout_weight="1.0" />
+			<Button android:enabled="false" android:id="@id/restart" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Restart" android:layout_weight="1.0" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="1.0">
+			<Button android:enabled="false" android:id="@id/calibrate" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Self Calibrate" android:layout_weight="1.0" />
+		</LinearLayout>
+		<View android:background="#ff848484" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="1.0">
+			<Button android:id="@id/quadrupedB52" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="QUADRUPED" android:layout_weight="3.0" />
+			<Button android:id="@id/quadLeg1B62" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="L2" android:layout_weight="1.0" />
+			<Button android:id="@id/quadLeg2B63" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="R2" android:layout_weight="1.0" />
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>

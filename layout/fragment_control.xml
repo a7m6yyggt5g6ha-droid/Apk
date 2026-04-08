@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:textSize="16.0sp" android:id="@id/cmdCountTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" android:fontFamily="serif-monospace" />
+			<TextView android:textSize="16.0sp" android:id="@id/gyroCountTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" android:fontFamily="serif-monospace" />
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical" android:background="#11a9edd8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<chica.chicaclient.TouchPad android:layout_gravity="center" android:id="@id/touchPad" android:layout_width="45.0mm" android:layout_height="45.0mm" android:src="@drawable/touchpad2" />
+		</LinearLayout>
+		<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="6.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:id="@id/torqueB51" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="TORQUE" android:layout_weight="1.0" />
+					<Button android:id="@id/standB53" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="STAND" android:layout_weight="1.0" />
+					<Button android:id="@id/homeB44" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="HOME" android:layout_weight="1.0" />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:id="@id/wideAxisB23" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="WIDE AXIS" android:layout_weight="1.0" />
+					<Button android:id="@id/keepBodyB24" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="HOLD POS" android:layout_weight="1.0" />
+					<Button android:id="@id/autoSitB63" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="AUTO SIT" android:layout_weight="1.0" />
+				</LinearLayout>
+				<View android:background="#ff848484" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:id="@id/moveXYB11" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="X-Y" android:layout_weight="1.0" />
+					<Button android:id="@id/moveZUB12" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="Z-W" android:layout_weight="1.0" />
+					<Button android:id="@id/turnVWB13" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="U-V" android:layout_weight="1.0" />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:id="@id/comboMoveB14" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="XY-UV" android:layout_weight="1.0" />
+					<Button android:id="@id/rotateB21" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="FLEX" android:layout_weight="1.0" />
+					<Button android:id="@id/diveB22" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="DIVE" android:layout_weight="1.0" />
+				</LinearLayout>
+				<View android:background="#ff848484" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:id="@id/walk3_3B31" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="TRIPOD" android:layout_weight="1.0" />
+					<Button android:id="@id/walk2_2B32" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="TRIPLE" android:layout_weight="1.0" />
+					<Button android:id="@id/walk1_1B33" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="RIPPLE" android:layout_weight="1.0" />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:id="@id/walk2p5B41" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="TRIPLE 2.5" android:layout_weight="1.0" />
+					<Button android:id="@id/walk1p5B42" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="RIPPLE 1.5" android:layout_weight="1.0" />
+					<Button android:id="@id/walkWaveB43" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="WAVE GAIT" android:layout_weight="1.0" />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:enabled="false" android:id="@id/dynamicWalkB" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="AUTO GAIT" android:layout_weight="1.0" />
+					<Button android:id="@id/walkStyleB61" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="WALK STYLE" android:layout_weight="1.0" />
+					<Button android:id="@id/crabWalkB34" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="CRAB WALK" android:layout_weight="1.0" />
+				</LinearLayout>
+				<View android:background="#ff848484" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:id="@id/jumpB" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="Jump" android:layout_weight="1.0" />
+					<Button android:id="@id/bounceB" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="Bounce" android:layout_weight="1.0" />
+					<Button android:id="@id/beepB" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Beep" android:layout_weight="1.0" />
+				</LinearLayout>
+				<View android:background="#ff848484" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0">
+					<Button android:id="@id/autoLevelB73" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="AUTO LEVEL" android:layout_weight="1.0" />
+					<Button android:id="@id/gyroB54" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="GYRO REMOTE" android:layout_weight="1.0" />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_weight="1.0">
+					<Button android:enabled="false" android:id="@id/spaceFiller" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</FrameLayout>
